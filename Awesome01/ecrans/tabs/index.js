@@ -1,33 +1,46 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import HomeScreen from '../Home';
 
-const Tab = createMaterialTopTabNavigator();
-
+const Tab = createMaterialBottomTabNavigator();
 const BottomTabs = () => {
-  return (
+ return (
     <Tab.Navigator
-      initialRouteName="Feed"
-      screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
-        tabBarLabelStyle: { fontSize: 12 },
-        tabBarStyle: { backgroundColor: 'powderblue' },
-      }}
+      initialRouteName="tabs_home"
+      activeColor="#e91e63"
+      barStyle={{ backgroundColor: 'tomato' }}
     >
       <Tab.Screen
-        name="Feed"
-        component={Feed}
-        options={{ tabBarLabel: 'Home' }}
+        name="tabs_home"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="home" color={color} size={26} />
+          ),
+        }}
       />
       <Tab.Screen
-        name="Notifications"
-        component={Notifications}
-        options={{ tabBarLabel: 'Updates' }}
+        name="tabs_updates"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: 'Updates',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="bell" color={color} size={26} />
+          ),
+        }}
       />
       <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{ tabBarLabel: 'Profile' }}
+        name="tabs_profile"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: 'Profile',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="account" color={color} size={26} />
+          ),
+        }}
       />
     </Tab.Navigator>
   );
