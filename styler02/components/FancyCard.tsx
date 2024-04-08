@@ -6,7 +6,7 @@ function FancyCard() {
     <View>
       <Text style={styles.headingText}>Trending places</Text>
       <View style={[styles.card, styles.cardElevated]}>
-        <Image />
+        <Image source={require('../img/house.jpg')} style={styles.cardImage} />
       </View>
     </View>
   );
@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
   },
   card: {},
   cardElevated: {},
+  cardImage: {
+    height: 200,
+  },
 });
 
 export default FancyCard;
