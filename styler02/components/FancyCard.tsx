@@ -24,17 +24,44 @@ function FancyCard() {
 
 const styles = StyleSheet.create({
   headingText: {
+    color: '#000000',
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 10,
   },
-  card: {},
-  cardElevated: {},
+  card: {
+    width: 380,
+    height: 360,
+    borderRadius: 10,
+    marginVertical: 12,
+    marginHorizontal: 16,
+  },
+  cardElevated: {
+    backgroundColor: '#CAD5E2',
+    elevation: 6,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+  },
   cardImage: {
     height: 200,
+    width: '100%',
+    marginBottom: 8,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
   },
-  cardBody: {},
-  cardTitle: {},
+  cardBody: {
+    flex: 1,
+    flexGrow: 1,
+    paddingHorizontal: 12,
+  },
+  cardTitle: {
+    color: '#000000',
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 6,
+  },
   cardLabel: {},
   cardDescription: {},
   cardFooter: {},
