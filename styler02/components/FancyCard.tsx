@@ -62,8 +62,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 6,
   },
-  cardLabel: {},
-  cardDescription: {},
+  cardLabel: {
+    fontSize: 14,
+    marginBottom: 6,
+  },
+  cardDescription: {
+    fontSize: 12,
+    marginBottom: 6,
+  },
   cardFooter: {},
 });
 
