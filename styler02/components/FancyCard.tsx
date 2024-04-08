@@ -68,7 +68,8 @@ const styles = StyleSheet.create({
   },
   cardDescription: {
     fontSize: 12,
-    marginBottom: 6,
+    marginTop: 6,
+    marginBottom: 12,
   },
   cardFooter: {},
 });

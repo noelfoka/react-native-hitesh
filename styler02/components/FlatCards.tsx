@@ -25,6 +25,7 @@ function FlatCards() {
 
 const styles = StyleSheet.create({
   headingText: {
+    color: '#000000',
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 10,
