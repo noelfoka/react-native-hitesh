@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 
 function FancyCard() {
   return (
-    <View>
+    <View style={styles.all}>
       <Text style={styles.headingText}>Trending places</Text>
       <View style={[styles.card, styles.cardElevated]}>
         <Image source={require('../img/house.jpg')} style={styles.cardImage} />
@@ -23,6 +23,9 @@ function FancyCard() {
 }
 
 const styles = StyleSheet.create({
+  all: {
+    marginBottom: 10,
+  },
   headingText: {
     color: '#000000',
     fontSize: 24,

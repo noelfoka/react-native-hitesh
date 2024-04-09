@@ -3,6 +3,8 @@ import {SafeAreaView, ScrollView} from 'react-native';
 import FlatCards from './components/FlatCards';
 import ElevatorCards from './components/ElevatorCards';
 import FancyCard from './components/FancyCard';
+import ActionCard from './components/ActionCard';
+import ContactLists from './components/ContactLists';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <FlatCards />
         <ElevatorCards />
         <FancyCard />
+        <ContactLists />
+        <ActionCard />
       </ScrollView>
     </SafeAreaView>
   );
