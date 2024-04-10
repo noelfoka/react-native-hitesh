@@ -5,8 +5,8 @@ export default function ContactList() {
   const contacts = [
     {
       uid: 1,
-      name: 'Hitesh Choudhary',
-      status: 'Just an extra ordinary teacher',
+      name: 'Noel FOKA',
+      status: 'Web and Mobile developer',
       imageUrl: 'https://avatars.githubusercontent.com/u/11613311?v=4',
     },
     {
