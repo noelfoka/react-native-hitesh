@@ -53,6 +53,7 @@ export default function ContactList() {
 
 const styles = StyleSheet.create({
   headingText: {
+    color: '#000000',
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 8,
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 16,
     marginBottom: 4,
+    marginTop: 4,
   },
   userCard: {
     flex: 1,
